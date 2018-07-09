@@ -1,0 +1,11 @@
+<div *ngFor="let e of emps" class="list-group-item">
+ <div class="row" routerLink="/emp/{{e._id}}" style="cursor: pointer;">
+    <div class="col-sm-4">
+        <img [src]="e.empImg" class="img-fluid">
+         </div>
+         <div class="col-sm-8">
+           <p><strong>Name : </strong> {{e.name}}</p>
+           <p><strong>Emp Id : </strong> {{e.empId}}</p>
+         </div>
+ </div>
+</div>
